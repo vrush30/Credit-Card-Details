@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>{{creditCardDetails.cardName}}</mat-card-title>
+        <mat-card-subtitle>{{creditCardDetails.bankName}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <ng-container *ngIf="creditCardDetails">
+            <div>{{creditCardDetails.id}}</div>
+            <div>{{creditCardDetails.cardName}}</div>
+            <div>{{creditCardDetails.bankName}}</div>
+            <div>{{creditCardDetails.description}}</div>
+            <div>{{creditCardDetails.maxCredit}}</div>
+            <div>{{creditCardDetails.active}}</div>
+            <div>{{creditCardDetails.annualFee}}</div>
+            <div>{{creditCardDetails.interestRate}}</div>
+            <div>{{creditCardDetails.introOffer}}</div>
+            <div>{{creditCardDetails.recommendedCreditScore}}</div>
+            <div>{{creditCardDetails.numberOfApplications}}</div>
+            <div>{{creditCardDetails.createdDate}}</div>
+            <div>{{creditCardDetails.termsAndConditions}}</div>
+        </ng-container>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions>
+</mat-card>

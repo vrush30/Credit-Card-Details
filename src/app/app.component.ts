@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crud-operations-json-server';
+  sidebarOpened: boolean = false;
+
+  sidebarToggle(){
+    this.sidebarOpened = this.sidebarOpened? false : true;
+  }
 }

@@ -1,0 +1,31 @@
+<mat-toolbar-row class="toolbar-row">
+    <div class="menu-section">
+        <button mat-button [matMenuTriggerFor]="menu">Apply for new debit card</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <div class="menu-section">
+        <button mat-button [matMenuTriggerFor]="menu">Debit cards types</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <div class="menu-section">
+        <button mat-button [matMenuTriggerFor]="menu">Debit cards offers</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <div class="menu-section">
+        <button mat-button [matMenuTriggerFor]="menu">Debit card transaction</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+</mat-toolbar-row>
+
